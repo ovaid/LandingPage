@@ -1,0 +1,64 @@
+/* Navbar Styles */
+.navbar {
+    background-color: #58a0e7; /* Navbar background color */
+    transition: background-color 0.5s ease;
+    /* background-image: url(./images/green-palm-leaf-border-isolated-transparent-background_176503-1456.avif); */
+    background-color: rgb(247, 247, 247);
+    /* background: linear-gradient(to right, #5eb545, #07a5e2, #1368aa); */
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: background-color 0.3s;
+    z-index: 1000;
+    
+}
+
+.navbar a.nav-link {
+    color: #f11e1e; /* Navbar link color */
+}
+
+.navbar a.nav-link:hover {
+    color: #007BFF; /* Navbar link color on hover */
+}
+.nav-item a{
+  color: #f11e1e;
+}
+
+/* Initial styles for the container */
+/* Initial styles for the container */
+#image {
+  width: 200px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 7px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+  transition: transform 0.3s ease-in-out, 
+  /* box-shadow 0.3s ease-in-out; */
+  /* margin: 20px; */
+}
+
+/* Initial styles for the image */
+#image img {
+  width: 100%;
+  height: 100%;
+  object-fit:fill;
+  transform-origin: center;
+  transition: transform 0.3s ease-in-out;
+  padding: 20px;
+  
+}
+
+/* Hover styles */
+#image:hover {
+  transform: scale(1.1) rotate(0deg); /* Bulge-out effect with rotation */
+  /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.6); Increased shadow on hover */
+}
+
+/* Hover styles for the image */
+#image:hover img {
+  transform: scale(1.1) rotate(0deg); /* Bulge-out effect with opposite rotation */
+}
+
+
