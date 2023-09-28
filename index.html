@@ -7,9 +7,18 @@
     <!-- Link to Bootstrap CSS (you can download it or use a CDN) -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Lora">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+
     <!-- Link to your custom CSS file -->
     <link rel="stylesheet" href="./styleSections/style.css">
     <link rel="stylesheet" href="./styleSections/section1.css">
+    <link rel="stylesheet" href="./styleSections/section2.css">
+    <link rel="stylesheet" href="./styleSections/section3.css">
+    <link rel="stylesheet" href="./styleSections/section4.css">
 
     <style>
         body{
@@ -18,6 +27,8 @@
             margin: 0;
             padding: 0;
         }
+       
+      
     </style>
 </head>
 <body>
@@ -30,11 +41,33 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto" id="nav">
-                    <li class="nav-item"><a class="nav-link font-weight-bold" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link font-weight-bold" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link font-weight-bold" href="#partners">Partners</a></li>
-                    <li class="nav-item"><a class="nav-link font-weight-bold" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link font-weight-bold" href="#contact">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold" href="#" data-toggle="tooltip" data-placement="bottom" title="Welcome to AlMuqeet Systems! We are living in a virtual world and at ASPL, our network engineer keeps an eye on your network and make sure your network is fast, reliable and free from malicious intrusions that too on competitive rates. Our network management service let you get real-time insights about the speed, memory and security of network before they become exigency.
+
+                              ">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold" href="#about" data-toggle="tooltip" data-placement="bottom" title="Learn about our mission and values">
+                            About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold" href="#partners" data-toggle="tooltip" data-placement="bottom" title="Explore our trusted partners">
+                            Partners
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold" href="#services" data-toggle="tooltip" data-placement="bottom" title="Discover our comprehensive services">
+                            Services
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold" href="#contact" data-toggle="tooltip" data-placement="bottom" title="Get in touch with us">
+                            Contact
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -49,32 +82,33 @@
                 <p>Proving its expertise as a Managed Service Messaging Platform provider, Global Telco Consult (GTC) is pleased to announce that it will be providing Almuqeet with managed services for their SMS platform customers. Almuqeet is a leading SMS Hubbing platform provider with extensive experience developing messaging platforms and customised messaging solutions.</p>
             </div> --> 
             <!-- <div class="bottom-section1"> -->
-              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img class="d-block w-100" style="height: 920px;" src="./images/carousal1.avif" alt="First slide">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100 h-10" style="height: 920px;" src="./images/CAROUSAL3.jpg" alt="Second slide">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100 h-10" style="height: 920px;" src="./images/CAROUSAL4.jpg" alt="Third slide">
-                  </div>
+                <div id="carouselExampleIndicators" class="carousel slide bg-dark" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active text-center">
+                            <img class="d-block mx-auto" style="max-width: 80%; height: auto; height: 920px" src="./images/carousal1.avif" alt="First slide">
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img class="d-block mx-auto" style="max-width: 80%; height: auto; height: 920px" src="./images/CAROUSAL3.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img class="d-block mx-auto" style="max-width: 80%; height: auto; height: 920px" src="./images/CAROUSAL4.jpg" alt="Third slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only" style="color: black;">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only" style="color: black;">Next</span>
+                    </a>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
+                
             <!-- </div>
              <div class="bottom-button">
                 <a href="">Get in Touch with</a>
@@ -85,6 +119,202 @@
 
     <!-- Your scripts here -->
 
+    <!-- <!-- ===================================================================section2=======================================  -->
+            <div class="container-fluid" >
+
+              <section class="features-section" id="section2-section">
+                <div class="container">
+                    <h2 class="section-heading text-center mb-5" id="section-heading">Product Features</h2>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="feature-card h">
+                                <i class="feature-icon fas fa-mobile-alt"></i>
+                                <h3 class="feature-title">Mobile Compatibility</h3>
+                                <p class="feature-description">"Easily access our SMS platform on any device, be it a smartphone, tablet, or computer. Our user-friendly design ensures a seamless experience across screens, making SMS management"</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="feature-card">
+                                <i class="feature-icon fas fa-bullhorn"></i>
+                                <h3 class="feature-title">Broadcast Messaging</h3>
+                                <p class="feature-description">"Effortlessly send SMS broadcasts, reaching multiple recipients with a single message. Our platform empowers efficient communication, connecting with your entire audience "</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="feature-card">
+                                <i class="feature-icon fas fa-check-circle"></i>
+                                <h3 class="feature-title">Delivery Confirmation</h3>
+                                <p class="feature-description">"Experience confidence with real-time SMS delivery confirmation. Our platform ensures prompt and reliable message delivery, eliminating uncertainty. Stay informed about message status. "</p>
+                            </div>
+                        </div>
+                        <!-- Additional Features -->
+                        <div class="col-lg-4">
+                            <div class="feature-card">
+                                <i class="feature-icon fas fa-user-friends"></i>
+                                <h3 class="feature-title">Contact Management</h3>
+                                <p class="feature-description">"Effortlessly maintain optimal contact organization with our robust platform. Enjoy the flexibility to import, export, and categorize contacts seamlessly."</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="feature-card">
+                                <i class="feature-icon fas fa-clock"></i>
+                                <h3 class="feature-title">Scheduled Messaging</h3>
+                                <p class="feature-description">"Empower your messaging strategy with precise SMS scheduling. Our platform simplifies automation, ensuring messages reach your audience at the optimal moment."</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="feature-card">
+                                <i class="feature-icon fas fa-globe"></i>
+                                <h3 class="feature-title">Multi-Language Support</h3>
+                                <p class="feature-description">"Open doors to communication possibilities with multilingual messaging.Our platform embraces language flexibility,empowering global outreach audiences."</p>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+              </section>
+            </div>
+
+            <!-- ==========================================================section 3=============================================  -->
+
+
+            <div class="container" id="container3">
+                <div class="section3">
+                    <!-- First Part -->
+                    <div class="upstraight d-flex flex-row" id="verticalyy">
+                        <div class = "vertical"></div>
+                        <h2>SERVICES</h2>
+                    </div>
+                    <div class="part1" id="part11">
+                        <div class="image1">
+                            <img src="./images2/image1.jpg" alt="Image 1">
+                        </div>
+                        <div class="content1">
+                            <h2>SMS Management</h2>
+                            
+                            <p>Effective SMS management is crucial for business growth, especially in the digital age. At AlMuqeet Systems, we understand that your core focus should be on your business, not on dealing with the intricacies of SMS services. That's where we come in. </p>
+                            <div class="butn" id="button11">
+                                <a href="https://almuqeet.systems/aSMSC">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Second Part -->
+                    <div class="part2" id="part12">
+                        <div class="image2">
+                            <img src="images2/image2.jpg" alt="Image 2">
+                        </div>
+                        <div class="content2" >
+                            <h2>Data Security</h2>
+                            
+                            <p>In today's data-driven landscape, safeguarding sensitive information is paramount. At AlMuqeet Systems, we recognize the critical importance of data security in the realm of SMS services. Your focus should be on business growth, not fretting over data breaches. </p>
+                            <div class="butn" id="button12">
+                                <a href="https://almuqeet.systems/aSMSC">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="container-fluid">
+                <div class="image-container">
+                    <div class="image-box">
+                        <img src="./images/image111.png" alt="Image 1" class="image d-inline-block">
+                    </div>
+                    <div class="image-box">
+                        <img src="./images2/image1.jpg" alt="Image 2" class="image d-inline-block">
+                    </div>
+                </div>
+                <div class="image-box">
+                    <img src="./images2/image2.jpg" alt="Image 2" class="image d-inline-block">
+                </div>
+            </div> -->
+            
+            <!-- <div class="container-xl">
+                <section id="testimonials" class="py-5">
+                    <div class="container">
+                        <h2 class="text-center mb-5">What Our Customers Say</h2>
+                        <div class="row">
+                            <!-- Testimonial 1 -->
+                            <!-- <div class="col-md-4 mb-4">
+                                <div class="card testimonial-card">
+                                    <div class="card-body">
+                                        <p class="card-text">"Server management and business growth have become interrelated particularly in IT industry. They both go hand in hand. While you can’t afford to divert your core competencies to handle complex server related issues, you can outsource your server related woes to ASPL.Our trained staff will fix problems associated with your servers, and keep them in fast, reliable and secure state."</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <img src="./images/section31.avif" alt="Customer 1" class="img-fluid rounded-circle mr-3" width="50">
+                                        <span>John Doe</span>
+                                        <br>
+                                        <small>CEO, ABC Inc.</small>
+                                    </div>
+                                </div>
+                            </div> -->
+            
+                            <!-- Testimonial 2 -->
+                            <!-- <div class="col-md-4 mb-4">
+                                <div class="card testimonial-card">
+                                    <div class="card-body">
+                                        <p class="card-text">"Server management and business growth have become interrelated particularly in IT industry. They both go hand in hand. While you can’t afford to divert your core competencies to handle complex server related issues, you can outsource your server related woes to ASPL.Our trained staff will fix problems associated with your servers, and keep them in fast, reliable and secure state."</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <img src="./images/section32.avif" alt="Customer 2" class="img-fluid rounded-circle mr-3" width="50">
+                                        <span>Jane Smith</span>
+                                        <br>
+                                        <small>Marketing Manager, XYZ Corp.</small>
+                                    </div>
+                                </div>
+                            </div> --> -->
+            
+                            <!-- Testimonial 3 -->
+                            <!-- <div class="col-md-4 mb-4">
+                                <div class="card testimonial-card">
+                                    <div class="card-body">
+                                        <p class="card-text">"Server management and business growth have become interrelated particularly in IT industry. They both go hand in hand. While you can’t afford to divert your core competencies to handle complex server related issues, you can outsource your server related woes to ASPL.Our trained staff will fix problems associated with your servers, and keep them in fast, reliable and secure state."</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <img src="./images/section33.avif" alt="Customer 3" class="img-fluid rounded-circle mr-3" width="50">
+                                        <span>Mary Johnson</span>
+                                        <br>
+                                        <small>Founder, PQR Co.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div> -->
+  <!-- =============================================================section 4 =======================================================================  -->
+            <div class="card-section">
+                <div class="card-content">
+                    <h2 class="card-heading">Card Heading</h2>
+                    <p class="card-paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor leo at massa facilisis, ut ullamcorper risus consectetur.
+                    </p>
+                </div>
+                <div class="card-image">
+                    <img src="image.jpg" alt="Image">
+                </div>
+            </div>
+            <div class="card-section">
+                <div class="card-content">
+                    <h2 class="card-heading">Card Heading</h2>
+                    <p class="card-paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor leo at massa facilisis, ut ullamcorper risus consectetur.
+                    </p>
+                </div>
+                <div class="card-image">
+                    <img src="image.jpg" alt="Image">
+                </div>
+            </div>
+            <div class="card-section">
+                <div class="card-content">
+                    <h2 class="card-heading">Card Heading</h2>
+                    <p class="card-paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor leo at massa facilisis, ut ullamcorper risus consectetur.
+                    </p>
+                </div>
+                <div class="card-image">
+                    <img src="image.jpg" alt="Image">
+                </div>
+            </div>
 
     <!-- Link to Bootstrap JS (optional, if you need Bootstrap JavaScript features) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -106,6 +336,40 @@
                  navbar.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
           });
 
+
+          $('#carouselExampleIndicatorsl').slick({
+             slidesToShow: 3, // Change this number to decrease the visible slides
+    // Other carousel settings
+});
+
+
+    </script>
+    <script>
+        // Initialize Bootstrap tooltips
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+            // $('[title=""]').css({color:"black", backgroundColor:"white"});
+
+
+           
+});
+$(document).ready(function() {
+    var lastScrollTop = 0;
+    
+    $(window).scroll(function(event) {
+    var st = $(this).scrollTop();
+    
+    if (st > lastScrollTop) {
+        // Scrolling down
+        $('#navbar').hide(2000); // Pass a numeric value (duration in milliseconds)
+    } else {
+        // Scrolling up
+        $('#navbar').show(2000); // Pass a numeric value (duration in milliseconds)
+    }
+    
+    lastScrollTop = st;
+});
+        });
     </script>
 </body>
 </html>

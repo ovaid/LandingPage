@@ -12,7 +12,13 @@
     width: 100%;
     transition: background-color 0.3s;
     z-index: 1000;
+    height: 65px;
     
+}
+.carousel-item{
+  text-align: right !important;
+  align-items: center;
+  /* margin-left: 12pc; */
 }
 
 .navbar a.nav-link {
@@ -29,10 +35,11 @@
 /* Initial styles for the container */
 /* Initial styles for the container */
 #image {
-  width: 200px;
-  height: 100px;
+  width: auto;
+  height: auto;
   overflow: hidden;
   border-radius: 7px;
+ 
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
   transition: transform 0.3s ease-in-out, 
   /* box-shadow 0.3s ease-in-out; */
@@ -41,20 +48,17 @@
 
 /* Initial styles for the image */
 #image img {
-  width: 100%;
+  width: auto;
   height: 100%;
   object-fit:fill;
   transform-origin: center;
   transition: transform 0.3s ease-in-out;
-  padding: 20px;
+  /* padding: 20px; */
+  /* padding-top: -200px; */
   
 }
 
-/* Hover styles */
-#image:hover {
-  transform: scale(1.1) rotate(0deg); /* Bulge-out effect with rotation */
-  /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.6); Increased shadow on hover */
-}
+
 
 /* Hover styles for the image */
 #image:hover img {

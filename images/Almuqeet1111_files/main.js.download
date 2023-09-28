@@ -1,0 +1,67 @@
+;(function($) {
+
+    var selector = {
+        body: 'html, body',
+        headerMenu: '#mobile-menu',
+        headerMenuIcon: '#header-menu-icon',
+        form: '.landing-contact',
+        formField: '.wpcf7 input, .wpcf7 textarea',
+        scrollTop: '.fv-scroll-top',
+        requestQuote: 'a[id="section_1_button"], a[href*="contact"]'
+    };
+
+    var ids = {
+        reviews: 'landing-slider'
+    };
+
+    var mainMenuApi;
+
+    var mobileMenuInit = function() {
+        var menu = $(selector.headerMenu).mmenu();
+        mainMenuApi = menu.data('mmenu');
+    };
+
+    var mobileMenuToggle = function() {
+        mainMenuApi.open();
+    };
+
+    var sliderInit = function() {
+        if ($('#' + ids.reviews).length) {
+            slidr.create(ids.reviews, {
+                controls: "border",
+                direction: "horizontal",
+                touch: true
+            }).start();
+        }
+    };
+
+    var updateInputAttribute = function() {
+        if (this.value.length) {
+            $(this).attr('have-content', 'true');
+        } else {
+            $(this).removeAttr('have-content');
+        }
+    };
+
+    /**
+     * Scroll to top button click handler
+     */
+    const scrollTopClick = function() {
+        $(selector.body).animate({scrollTop: 0}, 500);
+    };
+
+    const requestQuoteClick = function(e) {
+        e.preventDefault();
+        const top = $(selector.form).offset().top - 32;
+        $(selector.body).animate({scrollTop: top}, 500);
+    };
+
+    $(document)
+        .on('click', selector.headerMenuIcon, mobileMenuToggle)
+        .on('keyup', selector.formField, updateInputAttribute)
+        .on('click', selector.scrollTop, scrollTopClick)
+        .on('click', selector.requestQuote, requestQuoteClick)
+        .ready(sliderInit)
+        .ready(mobileMenuInit);
+
+})(jQuery);

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- saved from url=(0151)https://fledge.as.criteo.com/tagging/advertiser?partnerId=22345&uid=f7729902-840d-49a7-8148-32495e617bb5&requestId=864b32e8-6991-4051-87e2-479328329cca -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <!-- Chrome origin trial token -->
+    <meta http-equiv="origin-trial" content="AnolOEEMEnMaCvmUcw/eijaA/Ntx4pke43TW8O1+XFxTL7yMSzmBnkPrjQ33sKmqvREEpLQOE72gUMzHLu9KiAoAAABseyJvcmlnaW4iOiJodHRwczovL2NyaXRlby5jb206NDQzIiwiZmVhdHVyZSI6IlByaXZhY3lTYW5kYm94QWRzQVBJcyIsImV4cGlyeSI6MTY5NTE2Nzk5OSwiaXNTdWJkb21haW4iOnRydWV9">
+</head>
+<body>
+
+<script>
+    if (!navigator.joinAdInterestGroup) {
+        console.log("No fledge for you!");
+    } else {
+        var igs = [
+  {
+    "owner": "https://fledge.as.criteo.com",
+    "name": "22345000_samepartner",
+    "priorityVector": {
+      "browserSignals.ageInMinutes": -1,
+      "browserSignals.one": -86400
+    },
+    "biddingLogicUrl": "https://fledge.as.criteo.com/simplebid?platform=as",
+    "biddingWasmHelperUrl": "https://fledge.as.criteo.com/criteo.wasm",
+    "trustedBiddingSignalsUrl": "https://fledge.as.criteo.com/getvalues",
+    "trustedBiddingSignalsKeys": [
+      "bid_partner_id_22345_uid_f7729902-840d-49a7-8148-32495e617bb5_type_samepartner"
+    ],
+    "userBiddingSignals": {
+      "trustedBiddingSignalsVersion": 1,
+      "userBiddingSignalsVersion": 1,
+      "partnerId": 22345,
+      "uid": "f7729902-840d-49a7-8148-32495e617bb5"
+    },
+    "updateUrl": "https://fledge.as.criteo.com/tagging/update?partnerId=22345\u0026uid=f7729902-840d-49a7-8148-32495e617bb5\u0026type=samepartner",
+    "ads": [],
+    "executionMode": "group-by-origin"
+  },
+  {
+    "owner": "https://fledge.as.criteo.com",
+    "name": "22345000_inmarket",
+    "priorityVector": {
+      "browserSignals.ageInMinutes": -1,
+      "browserSignals.one": -43200
+    },
+    "biddingLogicUrl": "https://fledge.as.criteo.com/simplebid?platform=as",
+    "biddingWasmHelperUrl": "https://fledge.as.criteo.com/criteo.wasm",
+    "trustedBiddingSignalsUrl": "https://fledge.as.criteo.com/getvalues",
+    "trustedBiddingSignalsKeys": [
+      "bid_partner_id_22345_uid_f7729902-840d-49a7-8148-32495e617bb5_type_inmarket"
+    ],
+    "userBiddingSignals": {
+      "trustedBiddingSignalsVersion": 1,
+      "userBiddingSignalsVersion": 1,
+      "partnerId": 22345,
+      "uid": "f7729902-840d-49a7-8148-32495e617bb5"
+    },
+    "updateUrl": "https://fledge.as.criteo.com/tagging/update?partnerId=22345\u0026uid=f7729902-840d-49a7-8148-32495e617bb5\u0026type=inmarket",
+    "ads": [],
+    "executionMode": "group-by-origin"
+  }
+];
+        var expiration = 2592000;
+        for (const ig of igs) {
+            navigator.joinAdInterestGroup(ig, expiration);
+        }
+    }
+
+    async function measureAudienceSize() {
+        // Measuring audience size
+        // Register worklet
+        if((!window?.sharedStorage?.worklet?.addModule) || (!window?.sharedStorage?.run)){
+            return;
+        }
+        await window.sharedStorage.worklet.addModule('/Tagging/scripts/asw.js');
+
+        // Run audience size measurement operation
+        await window.sharedStorage.run('audience-size-measurement', {
+            data: { bucketKey: BigInt('715044'), contributionValue: 8192}
+        });
+    }
+
+    measureAudienceSize();
+
+</script>
+
+
+</body></html>

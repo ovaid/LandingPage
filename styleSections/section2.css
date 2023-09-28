@@ -1,0 +1,81 @@
+        /* Custom CSS styles for the Product Features section */
+        #section2-section{
+            background-image: url("/images/section2.webp");
+            /* background: linear-gradient(to right, #c0e7b6, #b9ddeb, #7d9ab1);  */
+            background-color: #f3f0f0;
+        }
+        
+        .features-section {
+            background-color: #f8f8f8;
+            padding: 80px 0;
+            /* background-image: url("/images/"); */
+        }
+
+        .feature-card {
+            text-align: center;
+            margin-bottom: 30px;
+            border: 1px solid #e0e0e0;
+            /* border: none; */
+            border-radius: 8px;
+            box-shadow: 8px 18px 16px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease-in-out;
+            padding: 20px;
+            background-color: #fbf8f8;
+        }
+
+        .feature-card:hover {
+            transform: scale(1.05);
+            box-shadow: 8px 18px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .feature-icon {
+            font-size: 36px;
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+
+        .feature-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            /* color: #f8f8f8; */
+        }
+
+        .feature-description {
+            font-size: 14px;
+            color: #555;
+            /* color: #e0e0e0; */
+        }
+
+        #section-heading{
+            font-size: 50px;
+            font-weight: 600;
+        }
+
+        /* Animation for the heading */
+        .section-heading {
+            font-size: 0; /* Hide the original text */
+            position: relative;
+            animation: fade-in 1s ease-in-out forwards; /* Animation duration and easing */
+        }
+/* 
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+                font-size: 24px; /* Set the desired font size */
+            /* } */
+        /* }  */
+
+        /* Add more custom styles as needed */
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .feature-card {
+                margin-bottom: 20px;
+            }
+        }

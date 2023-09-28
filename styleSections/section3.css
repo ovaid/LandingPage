@@ -1,0 +1,320 @@
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.card-footer img{
+    height: 50px;
+    width: 51px;
+}
+
+.text-center{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+/* Apply animations to cards */
+.testimonial-card {
+    animation: slideIn 0.5s ease-in-out;
+}
+
+/* body { */
+    /* background-color: #f0f0f0; /* Background color for the body */
+    /* margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; */
+/* }  */
+/*  */
+.image-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center; /* Horizontally center content within the container */
+    max-width: 800px; /* Adjust the max-width as needed */
+    width: 100%;
+    flex-wrap: wrap; /* Wrap to the next row on smaller screens */
+}
+
+.image-box {
+    position: relative;
+    width: calc(50% - 10px); /* Adjust the width and margin as needed */
+    margin: 10px;
+    overflow: hidden;
+    flex: 1; /* Distribute equal width within the container */
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.image-box:hover .image {
+    transform: rotate(30deg);
+}
+
+/* =====================new 3 section   */
+
+/* Styles for the Section */
+#container3 .section3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important; /* Center horizontally */
+    align-items: center !important; /* Center vertically */
+    padding: 20px;
+    max-width: 100%;
+    text-align: center !important;
+}
+
+/* Styles for Each Part */
+#container3 .section3 .part1 {
+    display: flex;
+    flex-direction: row; /* Place image and content in columns */
+    align-items: center; /* Center horizontally within each part */
+    margin: 20px;
+    text-align: center;
+    max-width: 100%; /* Center text within each part */
+}
+#container3 .section3 .part1 .image1{
+    max-width: 50%;
+    height: auto;
+}
+#container3 .section3 .part1 .image1 img{
+    max-width: 100%;
+    padding-right: 100px;
+    height: auto;
+    margin-right: 2px;
+    border-radius: 8px !important;
+}
+#container3 .section3 .part1 .content1{
+    text-align: left;
+    max-width: 50%;
+    height: auto;
+    margin-left:10px;
+  
+}
+#container3 .section3 .part1 .content1 h2{
+    text-align: left;
+    max-width: 100%;
+    font-size: 43px;
+    font-weight: 600;
+    color: rgb(16, 16, 16);
+    /* padding-right: 150px; */
+    
+}
+#container3 .section3 .part1 .content1 p{
+    text-align: left;
+    /* padding-right: 150px; */
+    margin-left: 0px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(39, 38, 38);
+   
+}
+
+#container3 .section3 .part2 {
+    display: flex;
+    flex-direction: row-reverse; /* Place image and content in columns */
+    align-items: center; /* Center horizontally within each part */
+    margin: 20px;
+    text-align: center;
+    max-width: 100%; /* Center text within each part */
+}
+#container3 .section3 .part2 .image2{
+    max-width: 50%;
+    height: auto;
+}
+#container3 .section3 .part2 .image2 img{
+    max-width: 100%;
+    border-radius: 8px;
+    height: auto;
+    padding-left: 50px;
+}
+
+#container3 .section3 .part2 .content2{
+    text-align: left;
+    max-width: 50%;
+    height: auto;
+    margin-left: 10px;
+
+}
+#container3 .section3 .part2 .content2 h2{
+    text-align: left;
+    /* margin-left: 20px; */
+    max-width: 100%;
+    font-size: 43px;
+    font-weight: 600;
+    color: rgb(16, 16, 16);
+}
+#container3 .section3 .part2 .content2 p{
+    text-align: left;
+    /* margin-left: 20px; */
+    max-width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(39, 38, 38);
+}
+#button12,
+#button11{
+    max-width: 100%;
+    text-align: left;
+    height: auto;
+    display: inline-block;
+}
+
+#container3 .section3 .part1 .content1 .butn a,
+#container3 .section3 .part2 .content2 .butn a{
+    border: none;
+    border-radius: 7px;
+    max-width: auto;
+    height: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-decoration: none !important;
+    color: rgb(244, 245, 246) !important;
+    background-color: rgb(7, 85, 148);
+    text-align: center;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    /* margin-top: 40px; */
+    
+  }
+
+  #container3 .section3 .part1 .content1 .butn a:hover,
+  #container3 .section3 .part2 .content2 .butn a:hover{
+    
+    background-color: rgb(238, 241, 244);
+    color: rgb(4, 41, 71) !important;
+    border:  solid rgb(205, 211, 216);
+    background-image: url("/images/daniel-cheung-cPF2nlWcMY4-unsplash.jpg");
+  }
+
+  .vertical {
+    border-left: 6px solid rgb(7, 47, 129);
+    height: 44px;
+    /* position:absolute; */
+    left: 50%;
+    border-radius: 80%;
+    padding: 40%;
+ }
+
+ /* .vertical:hover{
+    /* border-left: none; */
+    /* border-right: 3px solid rgb(7, 47, 129);
+    border-radius: 80%;
+    padding: 40%;
+    right: 50%; */
+  */
+  #verticalyy{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #verticalyy div{
+    margin-right: -30px;
+
+  }
+  #verticalyy h2{
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 22px;
+    
+  }
+
+
+@media screen and (max-width: 800px) {
+    #container3 .section3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    /* Styles for Each Part */
+    #part11,
+    #part12 {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+        margin: 20px;
+        text-align: center;
+        max-width: 100%;
+    }
+    #container3 .section3 .part1 .image1,
+    #container3 .section3 .part2 .image2{
+        max-width: 100%;
+        text-align: center;
+    }
+
+    #container3 .section3 .part1 .image1 img,
+    #container3 .section3 .part2 .image2 img {
+        max-width:100%;
+        height: 240px;
+        border-radius: 8px;
+        margin-bottom: 1pc;
+        padding: 0;
+        margin-left: 0;
+        text-align: left;
+    }
+
+    #container3 .section3 .part1 .content1,
+    #container3 .section3 .part2 .content2{
+        text-align: justify;
+        max-width: 100%;
+        padding: 0;
+    }
+    #container3 .section3 .part1 .content1 h2,
+    #container3 .section3 .part2 .content2 h2 {
+        text-align: justify;
+        max-width: 100%;
+        font-size: 35px;
+        font-weight: 600;
+        color: rgb(16, 16, 16);
+        padding: 0;
+    }
+
+    #container3 .section3 .part1 .content1 p,
+    #container3 .section3 .part2 .content2 p {
+        text-align: justify;
+        max-width: 100%;
+        font-size: 16px;
+        font-weight: 400;
+        color: rgb(39, 38, 38);
+        padding: 0;
+    }
+
+    #verticalyy{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: -1pc;
+      }
+
+    #verticalyy div{
+        margin-right: -28px;
+    
+      }
+      #verticalyy h2{
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        margin-top: 12px;
+      }
+}
