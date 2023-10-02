@@ -1,0 +1,131 @@
+#container7 {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    /* background-color: #fff; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    background-image: url('../images2/BACK11.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: none;
+    /* background-color: #386aaf; */
+}
+
+#container7 h1 {
+    font-size: 24px;
+    color: #191818;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    margin-top: 2pc;
+    gap: 10px;
+    width: 100%;
+    
+
+}
+
+.faq-question {
+    height: 100px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a19c9c;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 19px;
+    font-weight: 400;
+    color: rgb(14, 13, 13);
+    transition: background-color 0.3s ease;
+    box-shadow: 4px 4px 4px rgb(31, 30, 30);
+    width: auto;
+    
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    background-color: #e78358;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(14, 13, 13);
+    height:5pc ;
+}
+
+.faq-question:hover {
+    background-color: #41c951;
+}
+
+.faq-question .icon {
+    font-size: 28px;
+    transition: transform 0.2s ease;
+    border: none;
+    border-radius: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #386aaf;
+}
+
+.faq-question.open .icon {
+    transform: rotate(45deg);
+
+}
+
+
+
+
+/* Add this CSS to your existing styles */
+.faq-item {
+    opacity: 0; /* Initially hide the FAQ items */
+    transform: translateY(50px); /* Slide them down by 50px */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.faq-item.fade-in {
+    opacity: 1; /* Show the FAQ items */
+    transform: translateY(0); /* Slide them up to their original position */
+}
+
+
+@media (max-width: 768px) {
+    #container7 {
+      width: 100%; /* Adjust as needed */
+    }
+  
+    .faq-question {
+        height: auto;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #a19c9c;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 12px !important;
+        font-weight: 400;
+        color: rgb(14, 13, 13);
+        transition: background-color 0.3s ease;
+        box-shadow: 4px 4px 4px rgb(31, 30, 30);
+        width: auto;
+        
+    }
+
+    .faq-answer {
+        display: none;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-top: none;
+        border-radius: 0 0 5px 5px;
+        background-color: #e78358;
+        font-size: 12px;
+        font-weight: 400;
+        color: rgb(14, 13, 13);
+        height:5pc ;
+    }
+}

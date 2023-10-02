@@ -1,0 +1,70 @@
+/* Style the About section */
+.about-section {
+  padding: 80px 0;
+  background-color: #f8f8f8;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-image {
+  width: 100%;
+  border-radius: 10px;
+  opacity: 0; /* Initial opacity set to hide */
+  transform: translateX(-50px); /* Initial position set to move from left */
+  animation: slideFromLeft 1s ease-in-out forwards; /* Animation for image */
+}
+
+.animated-content {
+  padding-left: 20px;
+  opacity: 0; /* Initial opacity set to hide */
+  transform: translateX(50px); /* Initial position set to move from right */
+  animation: slideFromRight 1s ease-in-out forwards; /* Animation for content */
+}
+
+@keyframes slideFromLeft {
+  0% {
+      opacity: 0;
+      transform: translateX(-50px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+@keyframes slideFromRight {
+  0% {
+      opacity: 0;
+      transform: translateX(50px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+.about-content h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 20px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive design for small screens */
+@media screen and (max-width: 768px) {
+  .about-content h2 {
+      font-size: 28px;
+  }
+
+  .about-content p {
+      font-size: 18px;
+  }
+}

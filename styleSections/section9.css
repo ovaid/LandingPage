@@ -1,0 +1,274 @@
+/* Reset default margin and padding */
+
+
+/* Set up a background image for the section */
+.team-section {
+    background: url('../images2/') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.team-member {
+    width: 23.33%;
+    text-align: center;
+    opacity: 0.7;
+    transition: opacity 0.5s ease-in-out;
+    cursor: pointer;
+    margin: 20px;
+    padding: 7px;
+    margin-right: 2pc;
+    background-color: rgba(137, 134, 134, 0.9);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    animation: zoomInOut 5s infinite alternate;
+}
+.team-section .pteam{
+    font-size: 19px;
+    font-weight: 400;
+    width: 80%;
+    text-align: center;
+    color: #393838;
+}
+
+/* Style the member details */
+.member-details h3 {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #333;
+}
+
+.member-details p {
+    font-size: 16px;
+    color: #111010;
+}
+
+/* Add this to style the circular member images */
+.member-image {
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 120px !important;
+    height: 120px !important;
+    margin: 0 auto;
+    border: 2px solid #01b0f8;
+    transition: transform 2s ease-in-out;
+    animation: zoomInOut 5s infinite alternate; /* Added animation */
+}
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+
+.team-member:hover .member-image {
+    transform: scale(1.1);
+}
+
+/* Add this to style the social links */
+.social-links {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    background: rgba(10, 10, 10, 0.9);
+    border-top: 2px solid #eef0f1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* margin-left: -.5pc; */
+    padding-top: 5px;
+    margin-top: 3pc !important;
+    margin-left: -3pc;
+
+}
+
+.team-member:hover .social-links {
+    opacity: 1;
+    transform: translateY(0);
+    color: #0ed95c;
+}
+
+.social-links a {
+    color: #1767c2;
+    font-size: 22px;
+    text-decoration: none;
+    margin: .2pc;
+    margin-right: 1pc;
+}
+.social-links a:hover{
+    color: #ec250f;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+/* Adjust opacity for bottom members */
+.team-member:nth-last-child(-n+3) {
+    opacity: 0.7;
+}
+.lead{
+    font-size: 41px;
+    font-weight: 400;
+    width: 90%;
+}
+
+
+@media screen and(max-width:786px){
+    .team-members {
+        display: flex;
+        flex-direction: column !important;
+        /* grid-template-columns: 10fr !important; */
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    #12p{
+        font-size: 14px !important;
+        font-weight: 400;
+        width: 100% !important;
+        text-align: center;
+        color: #393838;
+    }
+    
+    .team-member {
+        width: 100%  !important;
+        text-align: center;
+        opacity: 0.6;
+        transition: opacity 0.5s ease-in-out;
+        cursor: pointer;
+        margin: 20px;
+        padding: 10px;
+        background-color: rgba(137, 134, 134, 0.9);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+        animation: zoomInOut 5s infinite alternate;
+    }
+    
+    /* Style the member details */
+    .member-details h3 {
+        font-size: 18px;
+        margin-top: 10px;
+        color: #333;
+    }
+    
+    .member-details p {
+        font-size: 14px;
+        color: #111010;
+    }
+    
+    /* Add this to style the circular member images */
+    .member-image {
+        position: relative;
+        border-radius: 50%;
+        overflow: hidden;
+        width: 80px !important;
+        height: 80px !important;
+        margin: 0 auto;
+        border: 2px solid #01b0f8;
+        transition: transform 2s ease-in-out;
+        animation: zoomInOut 5s infinite alternate; /* Added animation */
+    }
+    
+    @keyframes zoomInOut {
+        0% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(1.1);
+        }
+    }
+    
+    
+    .team-member:hover .member-image {
+        transform: scale(1.1);
+    }
+    
+    /* Add this to style the social links */
+    .social-links {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s, transform 0.3s;
+        background: rgba(255, 255, 255, 0.9);
+        border-top: 2px solid #01b0f8;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        /* margin-left: -1pc; */
+        padding-top: 5px;
+        margin-top: 3pc !important;
+    }
+    
+    .team-member:hover .social-links {
+        opacity: 1;
+        transform: translateY(0);
+        color: #0ed95c;
+    }
+    
+    .social-links a {
+        color: #328aed;
+        font-size: 22px;
+        text-decoration: none;
+        margin: .5pc;
+    }
+    .social-links a:hover{
+        color: #ec250f;
+        font-size: 22px;
+        text-decoration: none;
+    }
+    
+    /* Adjust opacity for bottom members */
+    .team-member:nth-last-child(-n+3) {
+        opacity: 0.7;
+    }
+    
+}
+
+/* Media Query for small screens */
+@media screen and (max-width: 786px) {
+    .team-member {
+        width: 70% !important;
+    }
+
+    .member-details h3 {
+        font-size: 18px;
+    }
+
+    .member-details p {
+        font-size: 14px;
+    }
+
+    .member-image {
+        width: 80px !important;
+        height: 80px !important;
+    }
+}

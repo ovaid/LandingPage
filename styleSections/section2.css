@@ -4,6 +4,56 @@
             /* background: linear-gradient(to right, #c0e7b6, #b9ddeb, #7d9ab1);  */
             background-color: #f3f0f0;
         }
+
+        
+        .upstraight {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 20px;
+      }
+      
+      .vertical1 {
+          border-left: 6px solid rgb(7, 47, 129);
+          height: 52px;
+          border-radius: 80%;
+          padding: 2.8%;
+          margin-right: px;
+      }
+      
+      #section-heading {
+          font-size: 19px;
+          font-weight: bold;
+          letter-spacing: 2px;
+          margin-top: 42px;
+      }
+      
+      /* Responsive styles for screens up to 768px */
+      @media screen and (max-width: 768px) {
+          .upstraight {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+          }
+      
+          .vertical1 {
+            border-left: 6px solid rgb(7, 47, 129);
+            height: 65px;
+            border-radius: 80%;
+            padding: 5.3%;
+            margin-right: -.9pc;
+          }
+      
+          #section-heading {
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-top: 42px;
+          }
+      }
         
         .features-section {
             background-color: #f8f8f8;
@@ -47,10 +97,12 @@
             /* color: #e0e0e0; */
         }
 
-        #section-heading{
-            font-size: 50px;
-            font-weight: 600;
-        }
+        /* #section-heading{
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-top: 22px;
+        } */
 
         /* Animation for the heading */
         .section-heading {
@@ -79,3 +131,5 @@
                 margin-bottom: 20px;
             }
         }
+
+       

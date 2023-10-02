@@ -1,0 +1,271 @@
+
+#container{
+	overflow: hidden;
+	/* background: linear-gradient(to right, #5eb545, #07a5e2, #1368aa) !important; */
+
+}
+#section5{
+	/* position: relative !important; */
+	/* z-index: 1; */
+	/* background: linear-gradient(to right, #5eb545, #07a5e2, #1368aa) !important; */
+	background-image: url('../images2/blue-curve-background.zip') !important;
+}
+
+.vertical {
+    border-left: 6px solid rgb(7, 47, 129);
+    height: 44px;
+    /* position:absolute; */
+    left: 50%;
+    border-radius: 80%;
+    padding: 63%;
+    margin-left: -2pc;
+ }
+
+ /* .vertical:hover{
+    /* border-left: none; */
+    /* border-right: 3px solid rgb(7, 47, 129);
+    border-radius: 80%;
+    padding: 40%;
+    right: 50%; */
+  */
+  #verticalyy{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: -5pc !important; */
+  }
+  #verticalyy div{
+    margin-right: -6px;
+
+
+  }
+  #H2{
+    font-size: 19px !important;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 13px;
+    margin-left: -.9pc  !important;
+    text-align: left;
+  }
+
+
+#section5{
+	/* background: linear-gradient(to right, #8dbb81, #8bbed2, #94b8d3); */
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	justify-content: center;
+	gap: 20px;
+}
+
+.card {
+	position: relative;
+	width: 100px !important;
+	height: 100px;
+	overflow: hidden;
+}
+
+.face {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	border-radius: 10px;
+	overflow: hidden;
+	transition: .5s;
+}
+
+.card .front {
+	transform: perspective(600px) rotateY(0deg);
+	box-shadow: 0 5px 10px #fff;
+}
+
+.card .front img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.text-h1 {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	font-size: 12px;
+	color: #fff;
+	background: rgba(0, 0, 0, .4);
+	text-align: center;
+}
+
+.card .back {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	transform: perspective(600px) rotateY(180deg);
+	background: rgb(3, 35, 54);
+	padding: 15px;
+	color: crimson;
+	text-align: center;
+	box-shadow: 0 5px 10px #fff;
+}
+
+.text-p {}
+
+.links {
+	border-top: 1px solid crimson;
+	height: 50px;
+	line-height: 50px;
+}
+
+.link-a {
+	color: crimson;
+}
+
+.card .back .text-h2 {
+	font-size: 11px;
+	letter-spacing: 2px;
+}
+
+.card .back .text-p {
+	letter-spacing: 1px;
+	font-size: 10px;
+}
+
+.card:hover .front {
+	transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+	transform: perspective(600px) rotateY(360deg);
+}
+
+
+/* ================================================= */
+
+.wrapper {
+	display: flex;
+	animation: moveCards 40s linear infinite;
+}
+
+.card {
+	
+	/* margin-right: 2px; */
+	transition: transform 10s;
+}
+
+@keyframes moveCards {
+	0% {
+		transform: translateX(0);
+	}
+	16.666% {
+		transform: translateX(-240px);
+	}
+	33.333% {
+		transform: translateX(-460px);
+	}
+	50% {
+		transform: translateX(-680px);
+	}
+	66.666% {
+		transform: translateX(-900px);
+	}
+	83.333% {
+		transform: translateX(-1120px);
+	}
+	100% {
+		transform: translateX(-1340px);
+	}
+}
+
+
+@media (max-width: 768px) {
+
+	#para11{
+		font-size: 17px !important;
+		font-weight: 600;
+		color: rgb(64, 62, 62);
+		max-width: 100%;
+		text-align: center !important;
+		/* padding: 0px !important; */
+	
+	   }
+	#container {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		max-width: 100% !important;
+	}
+
+	.wrapper {
+		display: flexbox;
+		max-width: 100% !important;
+		align-items: center;
+	}
+
+	.card {
+		margin-right: 0;
+		margin-bottom: 20px;
+		max-width: 100% !important;
+	}
+	.wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	justify-content: center;
+
+}
+	
+
+@keyframes moveCards {
+	0% {
+		transform: translateX(0);
+	}
+	16.666% {
+		transform: translateX(-220px);
+	}
+	33.333% {
+		transform: translateX(-440px);
+	}
+	50% {
+		transform: translateX(-660px);
+	}
+	66.666% {
+		transform: translateX(-880px);
+	}
+	83.333% {
+		transform: translateX(-1100px);
+	}
+	100% {
+		transform: translateX(-1320px);
+	}
+   }
+
+}
+
+
+#para11{
+	font-size: 16px !important;
+	font-weight: 400 !important;
+	color: rgb(64, 62, 62);
+	max-width:  100%;
+	text-align: center !important;
+	padding-left: 0 !important; 
+	padding-right: 0 !important;
+	
+}
+

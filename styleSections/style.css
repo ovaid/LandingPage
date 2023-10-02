@@ -1,9 +1,10 @@
 /* Navbar Styles */
 .navbar {
+
     background-color: #58a0e7; /* Navbar background color */
     transition: background-color 0.5s ease;
     /* background-image: url(./images/green-palm-leaf-border-isolated-transparent-background_176503-1456.avif); */
-    background-color: rgb(247, 247, 247);
+    background-color: rgb(247, 247, 247) !important;
     /* background: linear-gradient(to right, #5eb545, #07a5e2, #1368aa); */
     color: #fff;
     padding: 10px;
@@ -13,6 +14,8 @@
     transition: background-color 0.3s;
     z-index: 1000;
     height: 65px;
+    padding-left: 0px;
+    margin-left: 0px;
     
 }
 .carousel-item{
@@ -61,8 +64,5 @@
 
 
 /* Hover styles for the image */
-#image:hover img {
+/* #image:hover img {
   transform: scale(1.1) rotate(0deg); /* Bulge-out effect with opposite rotation */
-}
-
-

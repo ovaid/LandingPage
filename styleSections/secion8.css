@@ -1,0 +1,78 @@
+/* Reset some default margin and padding */
+
+
+/* Style the awards section */
+.awards-section {
+    background-color: #f4f4f4; /* Background color */
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* Style the awards container */
+.awards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Style each award */
+.award {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff; 
+    border-radius: 10px;
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform .5s ease-in-out;
+    /* width: 10%; */
+}
+
+.award:hover {
+    transform: translateY(-20px);
+}
+
+/* Style the count number */
+.count {
+    font-size: 4rem;
+    color: #01b0f8; /* Count number color */
+    font-weight: bold;
+    display: block;
+}
+
+/* Style the award description */
+.p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+
+@media screen and (max-width:786px) {
+
+    .award {
+        margin: 20px;
+        padding: 20px;
+        background-color: #fff; /* Award background color */
+        border-radius: 10px;
+        box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform .5s ease-in-out;
+        width: 80%;
+    }
+    .count {
+        font-size: 3rem;
+        color: #01b0f8; /* Count number color */
+        font-weight: bold;
+        display: block;
+    }
+    
+    /* Style the award description */
+    .p {
+        font-size: .9rem;
+        color: #666;
+        margin-top: 10px;
+        display: inline-block;
+    }
+    
+}
