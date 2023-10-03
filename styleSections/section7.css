@@ -51,7 +51,7 @@
     border: 1px solid #ddd;
     border-top: none;
     border-radius: 0 0 5px 5px;
-    background-color: #e78358;
+    background-color: #fdfdfd;
     font-size: 18px;
     font-weight: 400;
     color: rgb(14, 13, 13);
@@ -59,22 +59,29 @@
 }
 
 .faq-question:hover {
-    background-color: #41c951;
+    background-color: #434242;
+    color: rgb(178, 174, 174);
 }
 
 .faq-question .icon {
-    font-size: 28px;
+    font-size: 25px;
     transition: transform 0.2s ease;
     border: none;
     border-radius: 8px;
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color: #386aaf;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 35px;
+    background-color: #f0f2f5;
+    padding-top: -28px !important;
+    top: 10px;
+    margin-top: -5px;
 }
 
 .faq-question.open .icon {
     transform: rotate(45deg);
-
+}
+.faq-question.open .icon :hover{
+    color: black !important;
 }
 
 
@@ -97,6 +104,36 @@
     #container7 {
       width: 100%; /* Adjust as needed */
     }
+    .faq-question {
+        height: 100px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #a19c9c;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 19px;
+        font-weight: 400;
+        color: rgb(14, 13, 13);
+        transition: background-color 0.3s ease;
+        box-shadow: 4px 4px 4px rgb(31, 30, 30);
+        width: auto;
+        
+    }
+    .faq-question .icon {
+    font-size: 25px;
+    transition: transform 0.2s ease;
+    border: none;
+    border-radius: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    height: 32px;
+    background-color: #f0f2f5;
+    padding-top: -28px !important;
+    top: 10px;
+    margin-top: -5px;
+}
   
     .faq-question {
         height: auto;
@@ -122,7 +159,7 @@
         border: 1px solid #ddd;
         border-top: none;
         border-radius: 0 0 5px 5px;
-        background-color: #e78358;
+        background-color: #f8f6f5;
         font-size: 12px;
         font-weight: 400;
         color: rgb(14, 13, 13);

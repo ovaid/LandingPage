@@ -98,6 +98,8 @@ a {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	border-radius: none;
+	border: none !important;
 }
 
 .text-h1 {
@@ -166,7 +168,7 @@ a {
 .card {
 	
 	/* margin-right: 2px; */
-	transition: transform 10s;
+	transition: transform 1s;
 }
 
 @keyframes moveCards {
@@ -183,13 +185,13 @@ a {
 		transform: translateX(-680px);
 	}
 	66.666% {
-		transform: translateX(-900px);
+		transform: translateX(-460px);
 	}
 	83.333% {
-		transform: translateX(-1120px);
+		transform: translateX(-240px);
 	}
 	100% {
-		transform: translateX(-1340px);
+		transform: translateX(0);
 	}
 }
 
@@ -236,25 +238,24 @@ a {
 		transform: translateX(0);
 	}
 	16.666% {
-		transform: translateX(-220px);
+		transform: translateX(-240px);
 	}
 	33.333% {
-		transform: translateX(-440px);
+		transform: translateX(-460px);
 	}
 	50% {
-		transform: translateX(-660px);
+		transform: translateX(-680px);
 	}
 	66.666% {
-		transform: translateX(-880px);
+		transform: translateX(-460px);
 	}
 	83.333% {
-		transform: translateX(-1100px);
+		transform: translateX(-240px);
 	}
 	100% {
-		transform: translateX(-1320px);
+		transform: translateX(0);
 	}
    }
-
 }
 
 

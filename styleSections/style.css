@@ -1,22 +1,25 @@
 /* Navbar Styles */
 .navbar {
 
-    background-color: #58a0e7; /* Navbar background color */
+    /* background-color: #58a0e7;  */
     transition: background-color 0.5s ease;
     /* background-image: url(./images/green-palm-leaf-border-isolated-transparent-background_176503-1456.avif); */
-    background-color: rgb(247, 247, 247) !important;
+    background-color: rgb(239, 235, 235 )!important;
     /* background: linear-gradient(to right, #5eb545, #07a5e2, #1368aa); */
-    color: #fff;
+   color: #fff;
     padding: 10px;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 102%;
     transition: background-color 0.3s;
     z-index: 1000;
-    height: 65px;
-    padding-left: 0px;
-    margin-left: 0px;
+    height: 72px;
+    padding-left: -22px;
+    margin-left: -12px;
     
+}
+#navbarNav{
+  background-color: rgb(239, 235, 235 )!important;
 }
 .carousel-item{
   text-align: right !important;
@@ -33,6 +36,9 @@
 }
 .nav-item a{
   color: #f11e1e;
+}
+.nav-item{
+  background-color: rgb(239, 235, 235 )!important;
 }
 
 /* Initial styles for the container */

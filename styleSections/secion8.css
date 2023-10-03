@@ -6,6 +6,7 @@
     background-color: #f4f4f4; /* Background color */
     padding: 40px 0;
     text-align: center;
+    /* width: 100%; */
 }
 
 /* Style the awards container */
@@ -13,6 +14,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    /* width: 100%; */
 }
 
 /* Style each award */
@@ -24,7 +26,7 @@
     box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform .5s ease-in-out;
-    /* width: 10%; */
+    /* width: 19% !important; */
 }
 
 .award:hover {

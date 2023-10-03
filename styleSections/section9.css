@@ -65,7 +65,7 @@
     margin: 0 auto;
     border: 2px solid #01b0f8;
     transition: transform 2s ease-in-out;
-    animation: zoomInOut 5s infinite alternate; /* Added animation */
+    /* animation: zoomInOut 5s infinite alternate;  */
 }
 
 @keyframes zoomInOut {

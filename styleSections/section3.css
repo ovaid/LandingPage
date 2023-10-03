@@ -1,3 +1,40 @@
+#section3cont{
+    background-color: #e9ecef; 
+    background-image: url(../images2/rm222batch2-mind-03.jpg/* Set initial state for names */
+
+}
+
+.name {
+    opacity: 0;
+    animation: fadeIn 1s linear forwards;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+  100% {
+    opacity: 1;
+    transform: translateX(50%);
+  }
+}
+
+/* Add delays to individual names */
+.name:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.name:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.name:nth-child(3) {
+  animation-delay: 2s;
+
+
+    /* padding-bottom: 4pc; */
+}
+
 @keyframes slideIn {
     from {
         transform: translateY(20px);
@@ -168,6 +205,7 @@
     text-align: left;
     height: auto;
     display: inline-block;
+    margin-top: .5pc;
 }
 
 #container3 .section3 .part1 .content1 .butn a,
@@ -323,3 +361,7 @@
       }
     
     }
+
+
+
+    
