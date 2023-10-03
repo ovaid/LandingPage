@@ -50,9 +50,9 @@
 }
 
 .social-icons a:hover {
-    color: rgb(32, 32, 242);
+    color: rgb(215, 144, 14);
 }
-
+                                                  
 .company-logo {
     width: 150px; /* Adjust the width as needed */
     height: auto; /* Maintain the aspect ratio */
