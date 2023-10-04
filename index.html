@@ -1259,6 +1259,42 @@ check();
 // }
 
 
+// =================countries ==================================================  
+// Optional: Add a delay before starting the animation
+function startAnimation() {
+    const wrapper = document.querySelector('.wrapper');
+    const cards = document.querySelectorAll('.card');
+    const cardWidth = 250; // Adjust the card width as needed
+    const cardSpacing = 20; // Adjust the card spacing as needed
+
+    // Calculate the total width including all cards and spacing
+    const totalWidth = (cardWidth + cardSpacing) * cards.length;
+
+    // Duplicate the cards to create a continuous loop
+    const duplicatedCards = [...cards, ...cards];
+
+    // Set the total width of the wrapper to accommodate duplicated cards
+    wrapper.style.width = `${totalWidth}px`;
+
+    // Create a container to hold the duplicated cards
+    const container = document.createElement('div');
+    container.className = 'container';
+    container.style.width = `${totalWidth}px`;
+
+    // Append the duplicated cards to the container
+    duplicatedCards.forEach((card) => {
+        const clonedCard = card.cloneNode(true);
+        container.appendChild(clonedCard);
+    });
+
+    // Append the container to the wrapper
+    wrapper.appendChild(container);
+
+    // Add the 'animation' class to trigger the CSS animation
+    wrapper.classList.add('animation');
+}
+
+
 
 
 // =========================================section 5======================================
