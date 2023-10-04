@@ -27,8 +27,8 @@
 }
 
 .footer-links a:hover {
-    text-decoration: underline;
-    color: rgb(54, 54, 239);
+    text-decoration: none;
+    color: rgb(134, 134, 137);
 }
 
 .social-icons {
@@ -59,4 +59,26 @@
     display: block; /* Remove any default inline styles */
     margin-bottom: 20px; /* Add spacing below the logo */
     /* Add other styles as needed, such as margin, padding, etc. */
+}
+
+.company-logo:hover {
+    animation: shiver 0.2s ease-in-out alternate;
+}
+
+@keyframes shiver {
+    0% {
+        transform: translateX(-2px);
+    }
+    25% {
+        transform: translateX(2px);
+    }
+    50% {
+        transform: translateX(-2px);
+    }
+    75% {
+        transform: translateX(2px);
+    }
+    100% {
+        transform: translateX(-2px);
+    }
 }

@@ -504,8 +504,8 @@
                   <li class="first" style="font-size:15px;"><img src="./tick/check_1828643.png" alt="">Email Support</li>
                 </ul>
                 <a href="#" class="button button1">
-                    <!-- <h2 class="text1" style="font-size:22px;">$9.99</h2> -->
-                    <h2 class="text2" style="font-size: 22px;">$119.99</h2>
+                    <h2 class="text2" style="font-size:22px;">$9.99</h2>
+                    <h2 class="text1" style="font-size: 22px; display:none">$119.99</h2>
                 </a>
               </div>
               <div class="packages">
@@ -519,8 +519,8 @@
                   <li class="first" style="font-size:15px;"><img src="./tick/check_1828643.png" alt="">Premium Support</li>
                 </ul>
                 <a href="#" class="button button2">
-                    <!-- <h2 class="text1"  style="font-size:22px;">$19.99</h2> -->
-                    <h2 class="text2" style="font-size:22px;">$239.99</h2>
+                    <h2 class="text2"  style="font-size:22px;">$19.99</h2>
+                    <h2 class="text1" style="font-size:22px; display:none">$239.99</h2>
                 </a>
               </div>
               <div class="packages">
@@ -535,8 +535,8 @@
                   <li  class="first" style="font-size:15px;"><img src="./tick/check_1828643.png" alt=""> 24/7 Support</li>
                 </ul>
                 <a href="#" class="button button3">
-                    <!-- <h2 class="text1" style="font-size:22px;">$29.99</h2> -->
-                    <h2 class="text2" style="font-size:22px;">$359.99</h2>
+                    <h2 class="text2" style="font-size:22px;">$29.99</h2>
+                    <h2 class="text1" style="font-size:22px; display:none">$359.99</h2>
                 </a>
               </div>
             </div>
@@ -891,7 +891,7 @@
     <div class="awards-container">
         
         <div class="award">
-            <span class="count" data-target="49">0</span>
+            <span class="count" data-target="49" >0</span>
             <p class="p">Awards Won</p>
         </div>
         <div class="award">
@@ -941,7 +941,7 @@
         <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <!-- Add your company logo here -->
-                <img src="./tick/Almuqeet-logo.png" alt="Company Logo" class="company-logo">
+                <img src="./tick/Almuqeet-logo.png" alt="Company Logo" class="company-logo" id="comLogo">
                 <h4>About Us</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non justo quis metus venenatis scelerisque.</p>
             </div>
@@ -1198,16 +1198,37 @@ function check() {
   var text2 = document.getElementsByClassName("text2");
 
   for (var i = 0; i < text1.length; i++) {
-    if (checkBox.checked == true) {
-      text1[i].style.display = "block";
-      text2[i].style.display = "none";
-    } else if (checkBox.checked == false) {
-      text1[i].style.display = "none";
+    if (checkBox.checked == false) {
       text2[i].style.display = "block";
+      text1[i].style.display = "none";
+    //   text2[i].style.fontSize = "19px";
+    } else if (checkBox.checked == true) {
+      text2[i].style.display = "none";
+      text1[i].style.display = "block";
     }
   }
 }
 check();
+
+
+// Function to toggle the switch
+// function check() {
+//   var checkbox = document.getElementById("checbox");
+//   var monthlyText = document.getElementById("monthlyText");
+//   var yearlyText = document.getElementById("yearlyText");
+
+//   // Check the current state of the checkbox
+//   if (checkbox.checked) {
+//     // If it's checked, show yearly text and hide monthly text
+//     yearlyText.style.display = "inline-block";
+//     monthlyText.style.display = "none";
+//   } else {
+//     // If it's not checked, show monthly text and hide yearly text
+//     monthlyText.style.display = "inline-block";
+//     yearlyText.style.display = "none";
+//   }
+// }
+
 
 
 

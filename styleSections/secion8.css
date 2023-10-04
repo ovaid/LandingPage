@@ -26,7 +26,7 @@
     box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform .5s ease-in-out;
-    /* width: 19% !important; */
+    width: 11% !important;
 }
 
 .award:hover {
@@ -48,6 +48,19 @@
     margin-top: 10px;
     display: inline-block;
 }
+@media screen and (max-width:1200px){
+    .award {
+        margin: 20px;
+        padding: 20px;
+        background-color: #fff; 
+        border-radius: 10px;
+        box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform .5s ease-in-out;
+        width: 18% !important;
+    }
+}
+
 
 
 @media screen and (max-width:786px) {
@@ -60,7 +73,7 @@
         box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.1);
         text-align: center;
         transition: transform .5s ease-in-out;
-        width: 80%;
+        width: 65% !important;
     }
     .count {
         font-size: 3rem;
