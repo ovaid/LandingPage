@@ -90,6 +90,7 @@
 .carousel-inner .carousel-item img{
     /* max-height: 70% !important; */
     max-width: 100% important;
+    opacity: .3;
     /* max-block-size: 100%; */
 }
 
@@ -100,3 +101,143 @@
         max-width: 100%;
     }
 }
+/* #carouselExampleIndicators{
+    position: relative;
+}
+
+#float{
+    width: 60;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: left;
+    align-items: center;
+    position: absolute;
+   
+}
+#float .upper{
+    width: 14%;
+    /* position: absolute; */
+  }
+  /* #float .down{
+    width: 30%; */
+    /* position: absolute; */
+  }
+  /* .upper img{
+    width: 150%;
+    border-radius:20%;
+    height: 50%; */
+  
+  } */
+/* Base styles */
+#carouselExampleIndicators {
+    position: relative; /* Set the parent element to relative positioning */
+}
+
+.floater {
+    position: absolute; /* Set the .floater class to absolute positioning */
+    top: 7pc;
+    left: 4pc; /* Adjust top position as needed */
+    /* white-space: nowrap; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* To arrange .floater elements in a row */
+.floater .upper,
+.floater .down {
+    display: inline-block; /* Display the inner elements in a row */
+    vertical-align: top; /* Align them to the top */
+    margin: 10px; /* Adjust margin as needed for spacing */
+}
+
+.floater .upper img {
+    max-width: 100%; /* Make the image responsive */
+    height: 120px;
+    box-sizing: border-box;
+}
+
+.floater .down p{
+    font-size: 22px;
+    font-weight: 400;
+    color: rgb(252, 253, 253);
+    text-align: left;
+    font-family: sans-serif;
+    width: 100%; /* Take full width on small screens */
+    overflow: hidden; /* Hide content that overflows the container */
+    /* white-space: nowrap; / */
+}
+.floater .down {
+    width: 60%;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .floater {
+        position: absolute; /* Set the .floater class to absolute positioning */
+        top: 5pc;
+        left: 3pc; /* Adjust top position as needed */
+
+        white-space: nowrap; 
+       overflow: hidden;
+       text-overflow: ellipsis;
+    }
+
+    .floater .upper,
+    .floater .down {
+        display: block; /* Stack elements on small screens */
+        margin: 10px 0; /* Adjust vertical margin for stacking */
+        text-align: center; /* Center-align text on small screens */
+    }
+    .floater .down {
+        max-width: 100%;
+    }
+
+    .floater .upper img {
+        max-width: 20%; /* Make the image responsive */
+        height: auto;
+        display: block;
+    }
+
+    .floater .down p{
+        width: 100%; /* Take full width on small screens */
+        /* display: block; */
+        text-align: left;
+        font-size: 15px;
+        font-weight: 400;
+        overflow: hidden; /* Hide content that overflows the container */
+        white-space: nowerap;
+    }
+    
+}
+
+@media screens and (max-width:1150px){
+    .floater{
+        display: flex;
+        flex-direction: column;
+        top: 2pc;
+        left: 3pc; 
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .floater .upper img {
+        max-width: 50%; /* Make the image responsive */
+        height: 80px;
+        box-sizing: border-box;
+    }
+    
+    .floater .down p{
+        font-size: 14px !important;
+        font-weight: 400;
+        color: rgb(252, 253, 253);
+        text-align: left;
+        font-family: sans-serif;
+        width: 50%; /* Take full width on small screens */
+        overflow: hidden; /* Hide content that overflows the container */
+        /* white-space: nowrap; / */
+    }
+}
+

@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Page Title</title>
+    <title>AlMuqLandingPage</title>
     <!-- Link to Bootstrap CSS (you can download it or use a CDN) -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Lora">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mooli&family=Young+Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
@@ -14,6 +16,7 @@
 
 
     <!-- Link to your custom CSS file -->
+    <link style="height: 22px;" rel="icon" href="./tick/title.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./styleSections/style.css">
     <link rel="stylesheet" href="./styleSections/section1.css">
     <link rel="stylesheet" href="./styleSections/section2.css">
@@ -31,10 +34,17 @@
 
     <style>
         body{
-            font-family: Lora, serif;
-            font-family: Arial, sans-serif;
+            /* font-family: Lora, serif; */
+            /* font-family: Arial, sans-serif; */
             margin: 0 !important;
             padding: 0 !important;
+            font-family: 'Mooli', sans-serif;
+            /* font-family: 'Young Serif', serif; */
+        }
+
+        *{
+            font-family: 'Mooli', sans-serif;
+            /* font-family: 'Young Serif', serif;  */
         }
         @media screen and (max-width:786px){
             .vertical1{
@@ -115,13 +125,13 @@
                     </ol>
                     <div class="carousel-inner" style="max-height: 924px;">
                         <div class="carousel-item active text-center" id="carousal">
-                            <img class="d-block mx-auto" style="max-width: 100%; height: auto; height: px" src="./tick/david-marcu-78A265wPiO4-unsplash.jpg" alt="First slide">
+                            <img class="d-block mx-auto" style="max-width: 100%; height: auto; height: px" src="./images2/office2.avif" alt="First slide">
                         </div>
                         <div class="carousel-item text-center" id="carousal">
-                            <img class="d-block mx-auto" style="max-width: 100%; height: auto; height: px" src="./tick/dawid-zawila--G3rw6Y02D0-unsplash.jpg" alt="Second slide">
+                            <img class="d-block mx-auto" style="max-width: 100%; height: auto; height: px" src="./images2/office.avif" alt="Second slide">
                         </div>
                         <div class="carousel-item text-center" id="carousal">
-                            <img class="d-block mx-auto" style="max-width: 100%; height: auto; height: px" src="./tick/eberhard-grossgasteiger-y2azHvupCVo-unsplash.jpg" alt="Third slide">
+                            <img class="d-block mx-auto" style="max-width: 100%; height: auto; height: px" src="./images2/office33.avif" alt="Third slide">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -132,6 +142,17 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only" style="color: black;">Next</span>
                     </a>
+
+
+                    <!-- <div class="floater" id="float">
+                        <div class="upper">
+                            <img src="./images/Almuqeet logo.svg" alt="" >
+                        </div>
+                        <div class="down">
+                            <!-- <h2>Al Muqeet Systems</h2> -->
+                            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, asperiores ducimus vero architecto quo molestiae accusamus quos corporis debitis reprehenderit beatae! Ea, ad laborum ducimus nam laudantium quaerat dolore necessitatibus excepturi vel possimus, totam, dignissimos facilis nemo molestias neque.</p>
+                        </div>
+                    </div> --> 
                 </div>
                 
             <!-- </div>
@@ -443,7 +464,7 @@
                         <!-- Second Part -->
                         <div class="part2 mt-5" id="part12">
                             <div class="image2">
-                                <img src="images2/image2.jpg" alt="Image 2">
+                                <img src="./tick/dev99.jpg" alt="Image 2">
                             </div>
                             <div class="content2" >
                                 <h2>Data Security</h2>
@@ -460,7 +481,7 @@
                                 <img src="./tick/4884785.jpg" alt="Image 1" style="border-radius: 8px !important;">
                             </div>
                             <div class="content1">
-                                <h2>SMS Management</h2>
+                                <h2>SMS Routing</h2>
                                 
                                 <p>Effective SMS management is crucial for business growth, especially in the digital age. At AlMuqeet Systems, we understand that your core focus should be on your business, not on dealing with the intricacies of SMS services. That's where we come in. </p>
                                 <div class="butn" id="button11">
