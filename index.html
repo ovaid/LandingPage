@@ -113,15 +113,15 @@
                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                     </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active text-center">
-                            <img class="d-block mx-auto" style="max-width: 80%; height: auto; height: 920px" src="./images2/office2.avif" alt="First slide">
+                    <div class="carousel-inner" style="max-height: 924px;">
+                        <div class="carousel-item active text-center" id="carousal">
+                            <img class="d-block mx-auto" style="max-width: 100%; height: auto; height: px" src="./tick/david-marcu-78A265wPiO4-unsplash.jpg" alt="First slide">
                         </div>
-                        <div class="carousel-item text-center">
-                            <img class="d-block mx-auto" style="max-width: 80%; height: auto; height: 920px" src="./images2/office33.avif" alt="Second slide">
+                        <div class="carousel-item text-center" id="carousal">
+                            <img class="d-block mx-auto" style="max-width: 100%; height: auto; height: px" src="./tick/dawid-zawila--G3rw6Y02D0-unsplash.jpg" alt="Second slide">
                         </div>
-                        <div class="carousel-item text-center">
-                            <img class="d-block mx-auto" style="max-width: 80%; height: auto; height: 920px" src="./images/CAROUSAL4.jpg" alt="Third slide">
+                        <div class="carousel-item text-center" id="carousal">
+                            <img class="d-block mx-auto" style="max-width: 100%; height: auto; height: px" src="./tick/eberhard-grossgasteiger-y2azHvupCVo-unsplash.jpg" alt="Third slide">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -1159,10 +1159,10 @@ $(document).ready(function() {
         
         if (st > lastScrollTop) {
             // Scrolling down
-            $('#navbar').hide(2000); // 2 seconds
+            $('#navbar').hide(4000); // 2 seconds
         } else {
             // Scrolling up
-            $('#navbar').show(2000); // 2 seconds
+            $('#navbar').show(4000); // 2 seconds
         }
         
         lastScrollTop = st;
@@ -1191,6 +1191,12 @@ anime({
   ],
 });
 
+    // The image is displayed with a maximum width of 100%.
+    function test_image_max_width() {
+  const image = document.querySelector('#carousal img');
+  const maxWidth = getComputedStyle(image).getPropertyValue('max-width');
+  assert.strictEqual(maxWidth, '100%');
+}
 
 function check() {
   var checkBox = document.getElementById("checbox");
