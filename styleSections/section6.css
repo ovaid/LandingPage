@@ -16,6 +16,7 @@
             max-width: 1400px;
             margin: 0 auto;
             padding: 0 20px;
+            text-align: center;
         }
 
         .testimonial-card {
@@ -29,7 +30,7 @@
             cursor: pointer;
 			max-width: 90%;
             transition: transform 0.2s ease-in-out;
-			background-color: rgb(59, 58, 58) !important;
+			background-color: rgb(82, 80, 80) !important;
 			color: rgb(229, 232, 234);
         }
 
@@ -109,7 +110,27 @@
 			font-weight: 400;
 		}
 
-        @media screen and(max-width:786px){
+        @media screen and((max-width:786px) and (min-width:300px)){
+
+
+            .testimonial-section {
+                background: url('/images2/person5.avif') center/cover no-repeat !important;
+                /* padding: 0px !important; */
+                text-align: center;
+                color: #312f2f;
+                background-size: auto;
+                background-image: url(/images2/blueImage.avif) !important;
+                background: linear-gradient(to right, #5eb545, #07a5e2, #1368aa) !important;
+                max-width: 100%;
+                
+                
+            }
+            #container2 {
+                max-width: 100%;
+                /* margin-left:-5pc !important; */
+                /* padding: 0 20px; */
+                text-align: center !important;
+            }
             .popup {
                 display: none;
                 position: fixed;
@@ -153,17 +174,19 @@
                 font-weight: 400;
             }
             .testimonial-card {
-                /* background-color: rgba(255, 255, 255, 0.1); */
-                border-radius: 10px;
-                box-shadow: 0 0 10px rgba(200, 197, 197, 0.3);
-                padding: 20px;
-                margin: 20px;
-                /* margin-left: 4.5PC; */
-                text-align: center;
-                cursor: pointer;
-                max-width: 90%;
-                transition: transform 0.2s ease-in-out;
-                background-color: rgb(59, 58, 58) !important;
-                color: rgb(229, 232, 234);
+                .testimonial-card {
+                    /* background-color: rgba(255, 255, 255, 0.1); */
+                    border-radius: 10px;
+                    box-shadow: 0 0 10px rgba(200, 197, 197, 0.3);
+                    padding: 20px;
+                    margin: 20px;
+                    margin-left: -3.5PC !important;
+                    text-align: center;
+                    cursor: pointer;
+                    max-width: 90%;
+                    transition: transform 0.2s ease-in-out;
+                    background-color: rgb(82, 80, 80) !important;
+                    color: rgb(229, 232, 234);
+                }
             }
         }

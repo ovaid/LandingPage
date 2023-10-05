@@ -290,4 +290,15 @@
         width: 80px !important;
         height: 80px !important;
     }
+    .team-section .pteam{
+        font-size: 18px;
+        font-weight: 400;
+        width: 95%;
+        text-align: center;
+    /* color: #fbf8f8; */
+        box-sizing: border-box;
+        line-height: 1.7;
+    /* padding-left: 20px; */
+        float: left;
+    }
 }

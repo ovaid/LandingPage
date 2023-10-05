@@ -49,8 +49,34 @@
     text-decoration: none;
 }
 
-.social-icons a:hover {
+/* .social-icons a:hover {
     color: rgb(215, 144, 14);
+} */
+#fac:hover{
+    color: #1e60db;
+    /* outline: auto; */
+}
+#ins:hover{
+    color: rgb(235, 51, 223);
+    /* outline: auto; */
+}
+#twi:hover{
+    color: #01b0f8;
+    /* outline: auto; */
+}
+#lin:hover{
+    color: rgb(246, 244, 244);
+    background-color: rgb(16, 77, 233);
+    border: none;
+    /* border-radius: 8px; */
+    /* outline: auto; */
+}
+
+
+#git:hover{
+    color: rgb(32, 31, 31);
+    /* outline: auto; */
+    
 }
                                                   
 .company-logo {

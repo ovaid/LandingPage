@@ -18,10 +18,12 @@
 }
 
 .animated-content {
-  padding-left: 20px;
-  opacity: 0; /* Initial opacity set to hide */
-  transform: translateX(50px); /* Initial position set to move from right */
-  animation: slideFromRight 1s ease-in-out forwards; /* Animation for content */
+  padding-left: 7px;
+  opacity: 0;
+  transform: translateX(50px);
+  animation: slideFromRight 1s ease-in-out forwards;
+  max-width: 100%;
+  float: left;
 }
 
 @keyframes slideFromLeft {
