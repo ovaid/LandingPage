@@ -207,7 +207,7 @@
 
 #container3 .section3 .part3 {
     display: flex;
-    flex-direction: row-reverse; /* Place image and content in columns */
+    flex-direction: row; /* Place image and content in columns */
     align-items: center; /* Center horizontally within each part */
     margin: 20px;
     text-align: center;
@@ -219,33 +219,35 @@
 }
 #container3 .section3 .part3 .image3 img{
     max-width: 100%;
-    border-radius: 8px;
+    padding-right: 100px;
     height: auto;
-    padding-left: 50px;
+    margin-right: 2px;
+    border-radius: 8px !important;
 }
-
 #container3 .section3 .part3 .content3{
     text-align: left;
     max-width: 50%;
     height: auto;
-    margin-left: 10px;
-
+    margin-left:10px;
+  
 }
 #container3 .section3 .part3 .content3 h2{
     text-align: left;
-    /* margin-left: 20px; */
     max-width: 100%;
     font-size: 43px;
     font-weight: 600;
     color: rgb(16, 16, 16);
+    /* padding-right: 150px; */
+    
 }
 #container3 .section3 .part3 .content3 p{
     text-align: left;
-    /* margin-left: 20px; */
-    max-width: 100%;
+    /* padding-right: 150px; */
+    margin-left: 0px;
     font-size: 16px;
     font-weight: 400;
     color: rgb(39, 38, 38);
+   
 }
 #button12,
 #button11,
@@ -254,13 +256,18 @@
     text-align: left;
     height: auto;
     display: inline-block;
-    margin-top: .5pc;
+    margin-top: 1pc;
+    position: relative;
+    transition: transform 0.3s;
 }
+
+
 
 #container3 .section3 .part1 .content1 .butn a,
 #container3 .section3 .part2 .content2 .butn a,
 #container3 .section3 .part3 .content3 .butn a{
     border: none;
+    border: 1px solid rgb(24, 147, 247);
     border-radius: 3px;
     max-width: auto;
     height: 20px;
@@ -273,6 +280,8 @@
     font-size: 20px;
     padding-left: 30px;
     padding-right: 30px;
+    box-shadow: 2px 2px 2px rgb(69, 69, 69);
+    
     /* margin-top: 40px; */
     
   }
@@ -281,10 +290,22 @@
   #container3 .section3 .part2 .content2 .butn a:hover,
   #container3 .section3 .part3 .content3 .butn a:hover{
     
-    background-color: rgb(238, 241, 244);
-    color: rgb(4, 41, 71) !important;
-    border:  solid rgb(205, 211, 216);
-    background-image: url("/images/daniel-cheung-cPF2nlWcMY4-unsplash.jpg");
+    background-color: #e9ecef;;
+    color: rgb(24, 147, 247) !important;
+    /* border: 1px solid rgb(24, 147, 247); */
+    animation: bubble 0.4s ease-out;
+    /* background-image: url("../images2/rm222batch2-mind-03.jpg"); */
+  }
+  @keyframes bubble {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
 
   .vertical {

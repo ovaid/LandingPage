@@ -43,11 +43,7 @@
   background-color: rgb(239, 235, 235 )!important;
 }
 
-.navbar-nav {
-  height: 100vh;
-  position:sticky !important;
-  z-index: 100;
-}
+
 
 .navbar-nav .nav-link {
   padding-right: 0;

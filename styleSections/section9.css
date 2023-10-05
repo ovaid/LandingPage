@@ -30,11 +30,12 @@
     margin: 20px;
     padding: 7px;
     margin-right: 2pc;
-    background-color: rgba(153, 156, 160, 0.9);
+    background-color: rgba(100, 107, 118, 0.9);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    color: white;
     /* animation: zoomInOut 5s infinite alternate; */
 }
 .team-section .pteam{
@@ -130,6 +131,21 @@
     font-size: 22px;
     text-decoration: none;
 }
+#inst:hover{
+    color: #ef20d0;
+    font-size: 22px;
+    text-decoration: none;
+}
+#what:hover{
+    color: #08a848;
+    font-size: 22px;
+    text-decoration: none;
+}
+#face:hover{
+    color: #190bda;
+    font-size: 22px;
+    text-decoration: none;
+}
 
 /* Adjust opacity for bottom members */
 .team-member:nth-last-child(-n+3) {
@@ -149,7 +165,7 @@
         /* grid-template-columns: 10fr !important; */
         justify-content: center;
         align-items: center;
-        width: 100%;
+        width: 100% ;
         /* margin-top: 6pc !important; */
     }
     #12p{
@@ -174,6 +190,7 @@
         position: relative;
         overflow: hidden;
         animation: zoomInOut 5s infinite alternate;
+        color: white !important;
     }
     
     /* Style the member details */
@@ -275,7 +292,9 @@
 /* Media Query for small screens */
 @media screen and (max-width: 786px) {
     .team-member {
-        width: 70% !important;
+        width: 100% !important;
+        background-color: rgba(100, 107, 118, 0.9);
+        color: white !important;
     }
 
     .member-details h3 {
