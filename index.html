@@ -631,11 +631,11 @@
     
                 <div class="face front">
                     <img src="./images2/country4.jpg" alt="city">
-                    <h1 class="text-h1">CHIN</h1>
+                    <h1 class="text-h1">CHINA</h1>
                 </div>
     
                 <div class="face back">
-                    <h2 class="text-h2">CHIN</h2>
+                    <h2 class="text-h2">CHINA</h2>
                     <p class="text-p">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum repellat maiores aperiam nemo officia, praesentium suscipit? Eum voluptate fuga eius accusamus harum cum unde natus.
                     </p>
@@ -724,7 +724,10 @@
             </div>
             <div class="testimonial-content">
                 <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mattis odio at velit posuere, ac varius lorem cursus."</p>
-                <p class="testimonial-author">John Doe</p>
+                <div class="btn-name">
+                    <div><p class="testimonial-author">John Doe</p></div>
+               <div class="bott"> <a id="more" href="testimonial-card">Know More</a></div>
+                </div>
             </div>
         </div>
         <div class="testimonial-card" id="testcard" onclick="openPopup('Jane Smith', 'Client 2', 'Vestibulum in nunc nec tellus tincidunt dignissim ac a lectus. Nullam at risus a eros pharetra feugiat.')">
@@ -733,7 +736,10 @@
             </div>
             <div class="testimonial-content">
                 <p>"Vestibulum in nunc nec tellus tincidunt dignissim ac a lectus. Nullam at risus a eros pharetra feugiat."</p>
-                <p class="testimonial-author">Jane Smith</p>
+                <div class="btn-name">
+                    <div><p class="testimonial-author">Jane Smith</p></div>
+                <div class="bott"><a id="more" href="#testimonial-card">Know More</a></div>
+                </div>
             </div>
         </div>
         <div class="testimonial-card" onclick="openPopup('John Doe', 'Client 1', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mattis odio at velit posuere, ac varius lorem cursus.')">
@@ -742,7 +748,10 @@
             </div>
             <div class="testimonial-content">
                 <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mattis odio at velit posuere, ac varius lorem cursus."</p>
-                <p class="testimonial-author">John Doe</p>
+                <div class="btn-name">
+                    <div><p class="testimonial-author">John Doe</p></div>
+                <div class="bott"><a id="more" href="#testimonial-card">Know More</a></div>
+                </div>
             </div>
         </div>
         
@@ -752,7 +761,8 @@
             </div>
             <div class="testimonial-content">
                 <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mattis odio at velit posuere, ac varius lorem cursus."</p>
-                <p class="testimonial-author">John Doe</p>
+                <div class="btn-name"><div><p class="testimonial-author">John Doe</p></div>
+                <div class="bott"><a id="more" href="#testimonial-card">Know More</a></div></div>
             </div>
         </div>
         
@@ -762,7 +772,10 @@
             </div>
             <div class="testimonial-content">
                 <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mattis odio at velit posuere, ac varius lorem cursus."</p>
-                <p class="testimonial-author">John Doe</p>
+                <div class="btn-name">
+                    <div> <p class="testimonial-author">John Doe</p></div>
+                    <div class="bott"><a id="more" href="#testimonial-card">Know More</a></div>
+                </div>
             </div>
         </div>
         <!-- Add more testimonials here with images -->
@@ -981,7 +994,7 @@
             });
         });
 
-        function openPopup(author, content) {
+    function openPopup(author, content) {
     document.getElementById("popup-author").textContent = author;
     document.getElementById("popup-content").textContent = content;
     document.getElementById("popup").style.display = "block";
