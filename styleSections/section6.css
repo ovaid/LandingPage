@@ -31,7 +31,8 @@
 			max-width: 90%;
             
             transition: transform 0.2s ease-in-out;
-			background-color: rgb(82, 80, 80) !important;
+			/* background-color: rgb(82, 80, 80) !important; */
+            background: linear-gradient(45deg, #000000bd, #6c2626, #20355a,#9a9b2f);
 			color: rgb(229, 232, 234);
             height: auto;
         }
